@@ -56,7 +56,8 @@ us_state_abbrev = {
     'Wyoming': 'WY',
 }
 
-with open("employee_data.csv", newline="") as csvfileIn, open("Output_File.csv", 'w', newline="") as csvfileOut:
+csvpath = os.path.join("..", "Resources", "employee_data.csv")
+with open(csvpath, newline="") as csvfileIn, open("Output_File.csv", 'w', newline="") as csvfileOut:
     csvreader = csv.reader(csvfileIn, delimiter=",")
     csvwriter = csv.writer(csvfileOut, delimiter=",")
     

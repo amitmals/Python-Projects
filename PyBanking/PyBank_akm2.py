@@ -9,7 +9,8 @@ import os
 import csv
 
 #open the file budget_data.csv as read only(default) and read it with csv reader
-with open("budget_data.csv", newline="") as csvfile:
+csvpath = os.path.join("..", "Resources", "budget_data.csv")
+with open(csvpath, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     
     #initialize my variables    

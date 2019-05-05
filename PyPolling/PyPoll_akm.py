@@ -13,9 +13,9 @@
 
 import os
 import csv
-
+csvpath = os.path.join("..", "Resources", "election_data.csv")
 #open the file budget_data.csv as read only(default) and read it with csv reader
-with open("election_data.csv", newline="") as csvfile:
+with open(csvpath, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     
     #initialize my variables    
